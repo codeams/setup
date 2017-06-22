@@ -6,6 +6,9 @@
 
     // Extensions configuration
     "extensions.ignoreRecommendations": false,
+        // Vetur configuration
+        "vetur.format.styleInitialIndent": true,
+        "vetur.format.scriptInitialIndent": true,
 
     // Editor configuration
     "editor.fontFamily": "Operator Mono, Monaco, Fira Code, monospace",
