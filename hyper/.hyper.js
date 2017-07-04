@@ -5,7 +5,7 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 16,
+    fontSize: 17,
 
     // font family with optional fallbacks
     fontFamily: '"Operator Mono", Monaco, monospace',
@@ -32,7 +32,11 @@ module.exports = {
     // css: '',
 
     // custom css to embed in the terminal window
-    // termCSS: '',
+    termCSS: `
+      x-screen {
+        -webkit-font-smoothing: antialiased !important;
+      }
+    `,
 
     // set to `true` (without backticks) if you're using a Linux setup that doesn't show native menus
     // default: `false` on Linux, `true` on Windows (ignored on macOS)
