@@ -30,7 +30,7 @@ module.exports = {
       theme: 'Palenight',
 
       backgroundOpacity: '0.7',
-      accentColor: '#64FFDA',
+      accentColor: '#3084FF', // Taken from Sublime Palenight theme
 
       // Need restart. Enable the vibrance and blurred background
       // OPTIONS: 'dark', 'ultra-dark', 'bright'
