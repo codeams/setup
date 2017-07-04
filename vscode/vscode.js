@@ -23,13 +23,24 @@
     "editor.renderWhitespace": "boundary",
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
+    "editor.lineNumbers": "off",
 
     // Color configuration
+    "workbench.editor.showTabs": false,
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": false,
     "workbench.colorTheme": "Material Theme Palenight",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
-        // Here you can override the color theme settings
+        "title.visible": "false",
+
+        "entity.other.attribute-name": {
+            "font-style": "italic"
+        }
     },
+
+    // Material theme configuration
+    "materialTheme.cache.workbench.accent": "Teal",
 
     // Terminal & Integrated terminal configuration
     "terminal.external.osxExec": "iTerm.app",
@@ -38,5 +49,9 @@
     "terminal.integrated.lineHeight": 1.4, // For Monaco/Fira Code use: 1,4
     "terminal.integrated.enableBold": false,
     "terminal.integrated.cursorStyle": "underline",
-    "terminal.integrated.cursorBlinking": true
+    "terminal.integrated.cursorBlinking": true,
+
+    // Custom configuration for vue language
+    "[vue]": {
+    }
 }
