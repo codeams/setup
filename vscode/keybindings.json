@@ -1,0 +1,46 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "shift+cmd+7",
+    "command": "-editor.action.commentLine",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+7",
+    "command": "-editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+cmd+7",
+    "command": "-editor.action.blockComment",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+7",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+cmd+7",
+    "command": "-editor.action.commentLine",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+g",
+    "command": "editor.action.previousMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "-editor.action.previousMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  }
+]
