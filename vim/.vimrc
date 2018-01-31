@@ -25,10 +25,23 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'posva/vim-vue'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'drewtempelmeyer/palenight.vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'airblade/vim-rooter'
+
+" Language specific settinggs
+let g:jsx_ext_required = 0
+
+set t_Co=256
+set background=dark
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
 
 " Color Themes
-Plugin 'colors'
+" Plugin 'colors'
 
+set termguicolors
 call vundle#end()
 set background=dark
 colorscheme palenight
@@ -41,6 +54,10 @@ endif
 if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
+
+" Typography
+set macligatures
+set guifont=Fira\ Code:h14
 
 " Use :help 'option' to see the documentation for the given option.
 set autoindent
@@ -179,4 +196,18 @@ if filereadable(expand("~/.vimrc.local"))
 endif
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:Powerline_symbols = 'unicode'
 
+set guioptions=
+
+" Disable line breaks
+:set nowrap
+
+" Screen spliting stuff
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+set splitbelow
+set splitright
