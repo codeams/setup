@@ -9,7 +9,7 @@ export ZSH=/Users/codeams/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="hyperzsh"
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="bureau"
+ZSH_THEME="bossreau"
 # ZSH_THEME="theunraveler"
 # ZSH_THEME="bureau-optimized"
 
