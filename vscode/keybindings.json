@@ -1,24 +1,8 @@
 // Place your key bindings in this file to overwrite the defaults
-[
-  {
-    "key": "shift+cmd+7",
-    "command": "-editor.action.commentLine",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+cmd+7",
-    "command": "-editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
+[{
     "key": "shift+alt+cmd+7",
     "command": "-editor.action.blockComment",
     "when": "editorFocus"
-  },
-  {
-    "key": "shift+cmd+7",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus"
   },
   {
     "key": "shift+alt+cmd+7",
@@ -42,5 +26,141 @@
   {
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+alt+[BracketLeft]",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "alt+cmd+left",
+    "command": "workbench.action.terminal.focusPrevious"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "ctrl+cmd+left",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "alt+cmd+left",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+cmd+right",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+alt+cmd+[BracketLeft]",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "alt+cmd+2",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+alt+cmd+[IntlBackslash]",
+    "command": "-workbench.action.splitEditor"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "cmd+d",
+    "command": "-extension.vim_cmd+d",
+    "when": "editorTextFocus && vim.active && vim.use<D-d> && !inDebugRepl"
+  },
+  {
+    "key": "cmd+k cmd+b",
+    "command": "workbench.action.maximizeEditor"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+cmd+8",
+    "command": "workbench.action.evenEditorWidths"
+  },
+  {
+    "key": "ctrl+cmd+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+down",
+    "command": "-editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+cmd+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+cmd+2",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+cmd+[IntlBackslash]",
+    "command": "-workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+[Equal]",
+    "command": "editor.action.goToDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.goToDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+k",
+    "command": "-workbench.action.terminal.clear",
+    "when": "terminalFocus"
   }
 ]
