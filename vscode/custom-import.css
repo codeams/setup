@@ -1,0 +1,28 @@
+
+.title-actions {
+  display: none !important;
+}
+
+.monaco-workbench>.part.titlebar>.window-title {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.monaco-workbench>.part.titlebar:hover>.window-title {
+  opacity: 1;
+}
+
+.monaco-icon-label.title-label>.monaco-icon-label-description-container>.label-name {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.decorationsOverviewRuler {
+  /* visibility: hidden; */
+}
+
+.monaco-workbench > .part.editor > .content .editor-group-container.empty .editor-group-letterpress {
+  background-image: none;
+}
+
