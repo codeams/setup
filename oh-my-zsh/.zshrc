@@ -8,8 +8,8 @@ export ZSH=/Users/codeams/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="hyperzsh"
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="bossreau"
+ZSH_THEME="robbyrussell"
+# ZSH_THEME="bossreau"
 # ZSH_THEME="theunraveler"
 # ZSH_THEME="bureau-optimized"
 
@@ -73,6 +73,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+export EDITOR='vim'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -87,3 +89,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias swim='ssh codeams@165.227.24.113'
+alias c="clear"
+
+# Auto-change your nvm version
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
