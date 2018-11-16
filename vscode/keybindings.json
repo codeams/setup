@@ -1,5 +1,6 @@
 // Place your key bindings in this file to overwrite the defaults
-[{
+[
+  {
     "key": "shift+alt+cmd+7",
     "command": "-editor.action.blockComment",
     "when": "editorFocus"
@@ -162,5 +163,17 @@
     "key": "cmd+k",
     "command": "-workbench.action.terminal.clear",
     "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+3",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "cmd+t",
+    "command": "phpunit.TestNearest"
+  },
+  {
+    "key": "alt+cmd+t",
+    "command": "phpunit.Test"
   }
 ]

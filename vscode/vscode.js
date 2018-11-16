@@ -1,5 +1,5 @@
 // Codeams' VSCode configuration file
-export default {
+{
     "emmet.syntaxProfiles": {
         "html": {
             "attr_quotes": "single"
@@ -17,8 +17,8 @@ export default {
 
     // Editor configuration
     "editor.fontFamily": "Operator Mono Lig, Fira Code, Monaco, monospace",
-    "editor.fontSize": 14, // For Monaco/Fire Code use: 13
-    "editor.lineHeight": 30, // For Monaco/Fira Code use: 26
+    "editor.fontSize": 16, // For Monaco/Fire Code use: 13
+    "editor.lineHeight": 34, // For Monaco/Fira Code use: 26
     "editor.fontLigatures": true,
     "editor.cursorStyle": "line",
     "editor.cursorBlinking": "smooth",
@@ -28,13 +28,12 @@ export default {
     "editor.renderWhitespace": "boundary",
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
-    "editor.lineNumbers": "relative",
+    "editor.lineNumbers": "off",
 
     // Color configuration
     "workbench.editor.showTabs": false,
-    "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
-    "workbench.iconTheme": "eq-material-theme-icons-ocean",
+    "workbench.iconTheme": "material-icon-theme",
     // "workbench.colorCustomizations": {
     //     "title.visible": "false",
 
@@ -45,7 +44,7 @@ export default {
 
     // Terminal & Integrated terminal configuration
     "terminal.external.osxExec": "iTerm.app",
-    "terminal.integrated.fontFamily": "Monaco, Fira Code, Operator Mono, monospace",
+    "terminal.integrated.fontFamily": "Operator Mono Lig, Monaco, Fira Code, Operator Mono, monospace",
     "terminal.integrated.fontSize": 14, // For Monaco/Fira Code use: 12
     "terminal.integrated.lineHeight": 1.4, // For Monaco/Fira Code use: 1,4
     "terminal.integrated.cursorStyle": "underline",
@@ -62,18 +61,16 @@ export default {
     "sublimeTextKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
-    "editor.formatOnPaste": true,
 
     // Sidebar expolorer options
     "explorer.openEditors.visible": 0,
     "workbench.editor.enablePreview": true,
     "workbench.editor.tabCloseButton": "off",
-    "workbench.editor.showIcons": true,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.showIcons": false,
     "editor.smoothScrolling": true,
     "emmet.includeLanguages": {
         "php": "html",
-        "laravel-blade": "html",
+        "blade": "html",
         "vue": "html",
         "vue-html": "html"
     },
@@ -92,7 +89,7 @@ export default {
         "tab.activeBorder": "#5C6BC0"
     },
     "window.restoreWindows": "folders",
-    "window.newWindowDimensions": "maximized",
+    "window.newWindowDimensions": "default",
     "files.insertFinalNewline": true,
     "search.exclude": {
         "**/node_modules": true,
@@ -241,21 +238,31 @@ export default {
         "<D-d>": true,
         "<C-d>": true
     },
-    "workbench.colorTheme": "Material Theme Ocean High Contrast",
+    "workbench.colorTheme": "Material Theme Palenight",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-    "workbench.fontAliasing": "antialiased",
     "editor.letterSpacing": 0.2,
     "material-icon-theme.showUpdateMessage": false,
 
-
-    // Generate a token here: http://www.twitchapps.com/tmi
-    "twitchChat.oauth": "oauth:4ir59z1b6ft4hrc6riy0ftm7gyoco1",
-    "twitchChat.username": "codeams",
-    "twitchChat.channel": "ninja",
     // Optional: Set the amount of chatmessages that are shown
-    "twitchChat.historysize": 20,
     "window.closeWhenEmpty": false,
     "editor.tabCompletion": true,
-    "materialTheme.fixIconsRunning": false
+    "materialTheme.fixIconsRunning": false,
+    "scm.diffDecorations": "all",
+    "editor.glyphMargin": false,
+    "workbench.view.alwaysShowHeaderActions": false,
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.feedback.visible": false,
+    "editor.hover.enabled": false,
+
+    "vscode_custom_css.imports": ["file:///Users/codeams/Developer/setup/vscode/custom-import.css"],
+    "vscode_custom_css.policy": true,
+    "window.title": "${rootName}",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.hover.sticky": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "workbench.fontAliasing": "auto",
+    "extensions.autoUpdate": false,
+    "workbench.settings.editor": "json",
 }
