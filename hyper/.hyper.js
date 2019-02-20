@@ -12,14 +12,6 @@ module.exports = {
     // foregroundColor: '#fff',
     // backgroundColor: '#000',
 
-    // CSS configuration
-    // css: '',
-    termCSS: `
-      x-screen {
-        -webkit-font-smoothing: antialiased !important;
-      }
-    `,
-
     // Window configuration
     padding: '24px 24px',
     colors: {},
