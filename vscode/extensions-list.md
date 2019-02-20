@@ -15,6 +15,8 @@ Vetur
 Vim
 VScode-faker
 Wakatime
+Custom CSS and JS import
+Fix vsccode checksum
 
 Npm Intellisense?
 Path Intellisense?
