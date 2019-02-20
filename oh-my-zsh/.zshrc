@@ -90,7 +90,6 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias swim='ssh codeams@165.227.24.113'
 alias c="clear"
 
 # Auto-change your nvm version
