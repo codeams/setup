@@ -3,12 +3,21 @@
   display: none !important;
 }
 
-.monaco-workbench>.part.titlebar>.window-title {
+.monaco-workbench .part.titlebar>.window-title {
+  border-top-color: #212332 !important;
+  height: 15px !important;
+}
+
+.monaco-workbench .part>.composite.title>.composite-bar.panel-switcher-container {
+  display: none;
+}
+
+.monaco-workbench .part.titlebar>.window-title {
   opacity: 0;
   transition: opacity 1s;
 }
 
-.monaco-workbench>.part.titlebar:hover>.window-title {
+.monaco-workbench .part.titlebar:hover>.window-title {
   opacity: 1;
 }
 
@@ -22,7 +31,7 @@
   /* visibility: hidden; */
 }
 
-.monaco-workbench > .part.editor > .content .editor-group-container.empty .editor-group-letterpress {
+.monaco-workbench .part.editor>.content.empty .editor-group-container.empty>.editor-group-letterpress {
   background-image: none;
 }
 
