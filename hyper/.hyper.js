@@ -1,7 +1,8 @@
 module.exports = {
   config: {
     // Font configuration
-    fontSize: 17,
+    fontSize: 15,
+    lineHeight: 1.5,
     fontFamily: '"Operator Mono", Monaco, monospace',
 
     // Cursor configuration
@@ -21,7 +22,7 @@ module.exports = {
       // OPTIONS: 'Darker', 'Palenight', ''
       theme: 'Palenight',
 
-      backgroundOpacity: '0.7',
+      backgroundOpacity: '0.4',
       accentColor: '#3084FF', // Taken from Sublime Palenight theme
 
       // Need restart. Enable the vibrance and blurred background
