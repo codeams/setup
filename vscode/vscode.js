@@ -1,5 +1,5 @@
 // Codeams' VSCode configuration file
-{
+module.exports = {
     "emmet.syntaxProfiles": {
         "html": {
             "attr_quotes": "single"
@@ -16,16 +16,18 @@
         "vetur.format.scriptInitialIndent": true,
 
     // Editor configuration
-    "editor.fontFamily": "Operator Mono Lig, Fira Code, Monaco, monospace",
-    "editor.fontSize": 16, // For Monaco/Fire Code use: 13
-    "editor.lineHeight": 34, // For Monaco/Fira Code use: 26
+    "editor.fontFamily": "Operator Mono, Fira Code, Monaco, monospace",
+    "editor.fontSize": 13, // For Monaco/Fire Code use: 13
+    "editor.fontWeight": "600",
+    "editor.lineHeight": 30, // For Monaco/Fira Code use: 26
+    "editor.letterSpacing": 0.3,
     "editor.fontLigatures": true,
     "editor.cursorStyle": "line",
     "editor.cursorBlinking": "smooth",
     "editor.tabSize": 2,
     "editor.rulers": [],
     "editor.renderIndentGuides": false,
-    "editor.renderWhitespace": "boundary",
+    "editor.renderWhitespace": "selection",
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
     "editor.lineNumbers": "off",
@@ -34,6 +36,7 @@
     "workbench.editor.showTabs": false,
     "workbench.statusBar.visible": false,
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.tree.renderIndentGuides": "none",
     // "workbench.colorCustomizations": {
     //     "title.visible": "false",
 
@@ -44,9 +47,8 @@
 
     // Terminal & Integrated terminal configuration
     "terminal.external.osxExec": "iTerm.app",
-    "terminal.integrated.fontFamily": "Operator Mono Lig, Monaco, Fira Code, Operator Mono, monospace",
-    "terminal.integrated.fontSize": 14, // For Monaco/Fira Code use: 12
-    "terminal.integrated.lineHeight": 1.4, // For Monaco/Fira Code use: 1,4
+    "terminal.integrated.fontFamily": "Operator Mono, Monaco, Fira Code, Operator Mono, monospace",
+    "terminal.integrated.fontSize": 15, // For Monaco/Fira Code use: 1,4
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.cursorBlinking": true,
 
@@ -72,7 +74,9 @@
         "php": "html",
         "blade": "html",
         "vue": "html",
-        "vue-html": "html"
+        "vue-html": "html",
+        "erb": "html",
+        "liquid": "html"
     },
     "editor.detectIndentation": true,
     "workbench.tips.enabled": false,
@@ -161,9 +165,6 @@
         "strings": true
     },
     "typescript.quickSuggestionsForPaths": false,
-    
-    
-    
     "vim.cursorStylePerMode": {
         "insert": "line",
         "normal": "underline"
@@ -191,57 +192,66 @@
             "after": [
                 "<Esc>"
             ]
-        }
+        },
     ],
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [ "g", "b" ],
+            "commands": [ "workbench.action.previousEditor" ]
+        },
         {
             "before": [
                 "<leader>",
-                "d"
+                "s"
+            ],
+            "commands": [
+                ":vsp"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
             ],
             "after": [
-                "d",
-                "d"
+                "<C-w>",
+                "l"
             ]
         },
         {
             "before": [
-                "<C-n>"
+                "<C-k>"
             ],
-            "after": [],
-            "commands": [
-                {
-                    "command": ":nohl"
-                }
+            "after": [
+                "<C-w>",
+                "k"
             ]
         },
         {
             "before": [
-                "Z",
-                "Z"
+                "<C-j>"
             ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.save",
-                    "args": []
-                },
-                {
-                    "command": "workbench.action.closeActiveEditor",
-                    "args": []
-                }
+            "after": [
+                "<C-w>",
+                "j"
             ]
-        }
+        },
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
+        },
     ],
-    "vim.leader": "<space>",
+    "vim.leader": ",",
     "vim.handleKeys": {
         "<D-d>": true,
         "<C-d>": true
     },
-    "workbench.colorTheme": "Material Theme Palenight",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-    "editor.letterSpacing": 0.2,
     "material-icon-theme.showUpdateMessage": false,
 
     // Optional: Set the amount of chatmessages that are shown
@@ -258,11 +268,24 @@
     "vscode_custom_css.imports": ["file:///Users/codeams/Developer/setup/vscode/custom-import.css"],
     "vscode_custom_css.policy": true,
     "window.title": "${rootName}",
-    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
     "editor.hover.sticky": false,
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
-    "workbench.fontAliasing": "auto",
     "extensions.autoUpdate": false,
     "workbench.settings.editor": "json",
+    "workbench.fontAliasing": "antialiased",
+    "terminal.integrated.lineHeight": 1.4,
+    "scm.diffDecorationsGutterWidth": 2,
+    "editor.overviewRulerBorder": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "Material Theme Palenight",
+    "todohighlight.keywords": [
+        {
+            "text": "TODO",
+            "color": "white",
+            "textDecoration": "underline",
+            "backgroundColor": "transparent",
+        }
+    ],
 }
