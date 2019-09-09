@@ -32,3 +32,5 @@
 	name = Erick A. Montañez
 	email = codeams@gmail.com
 
+[core]
+	excludesfile = /Users/codeams/.gitignore
