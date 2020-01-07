@@ -216,5 +216,9 @@
     "key": "alt+tab",
     "command": "search.action.focusSearchList",
     "when": "hasSearchResult"
+  },
+  {
+    "key": "alt+cmd+9",
+    "command": "workbench.action.toggleCenteredLayout"
   }
 ]
