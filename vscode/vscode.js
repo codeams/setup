@@ -1,5 +1,21 @@
 // Codeams' VSCode configuration file
-module.exports = {
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "target": "ES6",
+        "allowSyntheticDefaultImports": false,
+        "baseUrl": "./frontend",
+        "paths": {
+            "Pages/*": ["app/js/v2/pages/*"],
+            "Components/*": ["app/js/v2/components/*"],
+            "Services/*": ["app/js/v2/services/*"],
+            "State/*": ["app/js/v2/state/*"],
+            "Styles/*": ["app/js/v2/styles/*"],
+            "LegacyJS/*": ["app/js/*"],
+            "LegacyStyles/*": ["app/scss/*"]
+        }
+    },
+    "exclude": ["node_modules"],
     "emmet.syntaxProfiles": {
         "html": {
             "attr_quotes": "single"
@@ -17,7 +33,7 @@ module.exports = {
 
     // Editor configuration
     "editor.fontFamily": "Operator Mono, Fira Code, Monaco, monospace",
-    "editor.fontSize": 13, // For Monaco/Fire Code use: 13
+    "editor.fontSize": 14, // For Monaco/Fire Code use: 13
     "editor.fontWeight": "600",
     "editor.lineHeight": 30, // For Monaco/Fira Code use: 26
     "editor.letterSpacing": 0.3,
@@ -288,4 +304,6 @@ module.exports = {
             "backgroundColor": "transparent",
         }
     ],
+    "scss.validate": false,
 }
+

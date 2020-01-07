@@ -27,11 +27,17 @@
   border-radius: 5px;
 }
 
-.decorationsOverviewRuler {
-  /* visibility: hidden; */
-}
+/* .decorationsOverviewRuler {
+  visibility: hidden;
+} */
 
 .monaco-workbench .part.editor>.content.empty .editor-group-container.empty>.editor-group-letterpress {
   background-image: none;
 }
 
+.monaco-workbench .part.editor>.content .editor-group-container>.title.breadcrumbs .breadcrumbs-control {
+  display: none;
+  /* Uncomment to return it to max width:
+  flex: none;
+  width: 200px; */
+}
