@@ -972,10 +972,14 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>760 696 400 129 0 0 1920 1057 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>2570 498 620 392 1920 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>296 108 1386 867 0 0 1920 1057 </string>
+	<string>284 168 1370 804 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>357 178 1242 741 0 0 1920 1057 </string>
+	<string>822 387 930 615 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>1998 261 930 615 1920 180 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_FFC37795-739C-4E80-AD4B-9FE97146FB9B</key>
@@ -1555,7 +1559,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.13903672271573606</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1805,7 +1809,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>22.3592679251269</real>
+			<real>30</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -2292,7 +2296,7 @@
 			<key>Thin Strokes</key>
 			<integer>1</integer>
 			<key>Transparency</key>
-			<real>0.82652879124365475</real>
+			<real>0.27197017766497467</real>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
@@ -2327,14 +2331,14 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1680, 1050}}</string>
+		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{311, 695}</string>
+		<string>{412, 761}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>C059AA5D-1F8E-473C-BCE1-22333CADECF0</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>35</integer>
+	<integer>66</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3013,6 +3017,9 @@
 	</dict>
 	<key>NoSyncSearchHistory</key>
 	<array>
+		<string>TopBar</string>
+		<string>TopBAr</string>
+		<string>position</string>
 		<string>we cannn</string>
 		<string>xsltFile</string>
 		<string>xsltFl</string>
@@ -3074,13 +3081,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-09-09T05:16:45Z</date>
+	<date>2019-09-24T15:55:58Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
