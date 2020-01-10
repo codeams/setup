@@ -41,3 +41,7 @@
   flex: none;
   width: 200px; */
 }
+
+.monaco-editor .scroll-decoration {
+  box-shadow: none !important;
+}
