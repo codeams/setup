@@ -1,21 +1,5 @@
 // Codeams' VSCode configuration file
 {
-    "compilerOptions": {
-        "jsx": "react",
-        "target": "ES6",
-        "allowSyntheticDefaultImports": false,
-        "baseUrl": "./frontend",
-        "paths": {
-            "Pages/*": ["app/js/v2/pages/*"],
-            "Components/*": ["app/js/v2/components/*"],
-            "Services/*": ["app/js/v2/services/*"],
-            "State/*": ["app/js/v2/state/*"],
-            "Styles/*": ["app/js/v2/styles/*"],
-            "LegacyJS/*": ["app/js/*"],
-            "LegacyStyles/*": ["app/scss/*"]
-        }
-    },
-    "exclude": ["node_modules"],
     "emmet.syntaxProfiles": {
         "html": {
             "attr_quotes": "single"
@@ -32,11 +16,11 @@
         "vetur.format.scriptInitialIndent": true,
 
     // Editor configuration
-    "editor.fontFamily": "Operator Mono, Fira Code, Monaco, monospace",
-    "editor.fontSize": 14, // For Monaco/Fire Code use: 13
+    "editor.fontFamily": "SF Mono, Arial, Operator Mono, Monaco, Fira Code, monospace",
+    "editor.fontSize": 13, // For Monaco/Fire Code use: 13
     "editor.fontWeight": "600",
     "editor.lineHeight": 30, // For Monaco/Fira Code use: 26
-    "editor.letterSpacing": 0.3,
+    "editor.letterSpacing": -0.3,
     "editor.fontLigatures": true,
     "editor.cursorStyle": "line",
     "editor.cursorBlinking": "smooth",
@@ -63,10 +47,11 @@
 
     // Terminal & Integrated terminal configuration
     "terminal.external.osxExec": "iTerm.app",
-    "terminal.integrated.fontFamily": "Operator Mono, Monaco, Fira Code, Operator Mono, monospace",
+    "terminal.integrated.fontFamily": "Operator Mono, Monaco, Fira Code, monospace",
     "terminal.integrated.fontSize": 15, // For Monaco/Fira Code use: 1,4
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.shell.osx": "/bin/zsh",
 
     // Custom configuration for vue language
     "[vue]": {},
@@ -180,11 +165,9 @@
         "comments": false,
         "strings": true
     },
-    "typescript.quickSuggestionsForPaths": false,
-    "vim.cursorStylePerMode": {
-        "insert": "line",
-        "normal": "underline"
-    },
+    // "typescript.quickSuggestionsForPaths": false,
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "underline",
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": false,
@@ -296,6 +279,9 @@
     "editor.overviewRulerBorder": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "workbench.colorTheme": "Material Theme Palenight",
+	"editor.renderLineHighlight": "none",
+	"editor.occurrencesHighlight": false,
+	"editor.hideCursorInOverviewRuler": true,
     "todohighlight.keywords": [
         {
             "text": "TODO",
@@ -304,6 +290,4 @@
             "backgroundColor": "transparent",
         }
     ],
-    "scss.validate": false,
 }
-
