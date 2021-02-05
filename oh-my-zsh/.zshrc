@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+ZSH_DISABLE_COMPFIX=true
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/codeams/.oh-my-zsh
 
@@ -55,7 +57,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm)
+plugins=(git nvm zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,40 +92,36 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias c="clear"
-alias pq_clear="echo 1 > /proc/sys/vm/drop_caches; echo 2 > /proc/sys/vm/drop_caches; echo 3 > /proc/sys/vm/drop_caches; rcpostgresql stop; rcpostgresql start;"
-
-# Disabling because we don't have nvm now
-# Auto-change your nvm version
-# autoload -U add-zsh-hook
-# load-nvmrc() {
-#   if [[ -f .nvmrc && -r .nvmrc ]]; then
-#     nvm use
-#   elif [[ $(nvm version) != $(nvm version default)  ]]; then
-#     echo "Reverting to nvm default version"
-#     nvm use default
-#   fi
-# }
-# add-zsh-hook chpwd load-nvmrc
-# load-nvmrc
-
-# Add RVM to PATH for scripting.
-# Important note: Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
+### SLS ###
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/codeams/.nvm/versions/node/v12.4.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/codeams/.nvm/versions/node/v12.4.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# [[ -f /Users/codeams/.nvm/versions/node/v12.4.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/codeams/.nvm/versions/node/v12.4.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/codeams/.nvm/versions/node/v12.4.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/codeams/.nvm/versions/node/v12.4.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+# [[ -f /Users/codeams/.nvm/versions/node/v12.4.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/codeams/.nvm/versions/node/v12.4.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/codeams/.nvm/versions/node/v12.4.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/codeams/.nvm/versions/node/v12.4.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
 
+### NVM ###
 export NVM_DIR="$HOME/.nvm"
+export NVM_LAZY_LOAD=true
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# RBENV
+# Disabling because we don't have nvm now
+# Auto-change your nvm version
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
+### RBENV ###
 eval "$(rbenv init -)"
