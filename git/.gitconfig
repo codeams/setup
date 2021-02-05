@@ -29,7 +29,7 @@
   merge = refs/heads/master
 
 [user]
-	name = Erick A. Montañez
+	name = Erick Montañez
 	email = codeams@gmail.com
 
 [core]
