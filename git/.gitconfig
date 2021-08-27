@@ -34,3 +34,4 @@
 
 [core]
 	excludesfile = /Users/codeams/.gitignore
+ 	editor = vim
