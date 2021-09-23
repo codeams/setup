@@ -1,0 +1,23 @@
+### Load oh-my-zsh library
+# this is disabled since most of my systems already have zsh
+# take the adventure of using antigen to install ohmyzsh in the future
+# antigen use oh-my-zsh
+
+### Load bundles from the default repo (oh-my-zsh)
+antigen bundle git
+antigen bundle command-not-found
+
+### enable on demand:
+# antigen bundle docker
+
+### Load bundles from external repos
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle jeffreytse/zsh-vi-mode
+
+### Select theme
+antigen theme denysdovhan/spaceship-prompt
+
+### Tell Antigen that you're done
+antigen apply

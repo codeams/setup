@@ -1,7 +1,7 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+source "/home/codeams/.zsh/antigen.zsh"
+antigen init ~/.antigenrc
+
 export ZSH="/home/codeams/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
