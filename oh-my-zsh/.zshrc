@@ -91,6 +91,9 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# add path to take pip3 installs
+export PATH="/home/codeams/.local/bin:$PATH"
+
 ### aliases
 alias pyman="python manage.py"
-alias pymantesteroni="python manage.py test --green-verbosity 3"
+
