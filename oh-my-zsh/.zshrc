@@ -93,3 +93,4 @@ fi
 
 ### aliases
 alias pyman="python manage.py"
+alias pymantesteroni="python manage.py test --green-verbosity 3"
