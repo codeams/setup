@@ -1,6 +1,6 @@
 
 source "/home/codeams/.zsh/antigen.zsh"
-antigen init ~/.antigenrc
+antigen init /home/codeams/.antigenrc
 
 export ZSH="/home/codeams/.oh-my-zsh"
 
@@ -97,3 +97,7 @@ export PATH="/home/codeams/.local/bin:$PATH"
 ### aliases
 alias pyman="python manage.py"
 
+# mac brew?
+# eval "$(/bin/brew shellenv)"
+# linux brew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
