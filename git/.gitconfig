@@ -35,3 +35,9 @@
 [core]
 	excludesfile = /Users/codeams/.gitignore
  	editor = vim
+
+[merge]
+  ff = only
+[pull]
+  ff = only
+
