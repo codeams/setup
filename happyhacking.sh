@@ -66,6 +66,8 @@ echo "delete .zshrc.pre-oh-my-zsh"
 rm .zshrc.pre-oh-my-zsh
 echo "delete .bashrc"
 rm .bashrc
+echo "delete .bash_logout"
+rm .bash_logout
 
 echo ""
 echo "reboot if you will please... just to make sure we didn't break anything :)"
