@@ -57,6 +57,16 @@ ln -s $repo/oh-my-zsh/.zsh $home
 echo "source zshrc, installing antigen plugins"
 source $home/.zshrc
 
+echo "deleting useless files"
+echo "delete .bash_history"
+rm .bash_history
+echo "delete .shell.pre-oh-my-zsh"
+rm .shell.pre-oh-my-zsh
+echo "delete .zshrc.pre-oh-my-zsh"
+rm .zshrc.pre-oh-my-zsh
+echo "delete .bashrc"
+rm .bashrc
+
 echo ""
 echo "reboot if you will please... just to make sure we didn't break anything :)"
 echo ""
