@@ -17,10 +17,6 @@ choose:
 - follow steps in happyhacking.sh
 
 ## troubleshooting
-**zsh is not a valid shell**
-```
-might need to add to /etc/shells
-```
 
 **reconfigure locales**
 ```
