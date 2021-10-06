@@ -18,6 +18,7 @@ Plugin 'jszakmeister/vim-togglecursor'
 
 "Syntax
 Plugin 'tweekmonster/django-plus.vim'
+Plugin 'elixir-editors/vim-elixir'
 
 
 " All of your Plugins must be added before the following line

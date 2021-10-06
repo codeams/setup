@@ -179,7 +179,7 @@ nmap <Leader>f :tag<space>
 "/
 "/ CtrlP
 "/
-let g:ctrlp_custom_ignore = 'vendor\|node_modules\|DS_Store\|git\|dist\|build\|__generated__'
+let g:ctrlp_custom_ignore = 'deps\|vendor\|node_modules\|DS_Store\|git\|dist\|build\|__generated__'
 let g:ag_prg='ag --ignore "./dist/*"'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10,results:30'
 
