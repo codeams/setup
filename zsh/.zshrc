@@ -93,6 +93,7 @@ fi
 
 # add path to take pip3 installs
 export PATH="/home/codeams/.local/bin:$PATH"
+export PATH="/home/codeams/.config/composer/vendor/bin:$PATH"
 
 ### aliases
 alias pyman="python manage.py"
