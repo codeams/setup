@@ -97,6 +97,7 @@ export PATH="/home/codeams/.config/composer/vendor/bin:$PATH"
 
 ### aliases
 alias pyman="python manage.py"
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 # mac brew?
 # eval "$(/bin/brew shellenv)"
