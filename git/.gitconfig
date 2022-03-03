@@ -33,7 +33,7 @@
 	email = codeams@gmail.com
 
 [core]
-	excludesfile = /Users/codeams/.gitignore
+	excludesfile = ~/.gitignore
  	editor = vim
 
 [merge]
