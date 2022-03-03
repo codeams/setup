@@ -102,4 +102,4 @@ alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 # mac brew?
 # eval "$(/bin/brew shellenv)"
 # linux brew
-# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
