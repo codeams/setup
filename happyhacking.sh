@@ -64,6 +64,10 @@ ln -s $repo/zsh/.zsh $home
 echo "source zshrc, installing antigen plugins"
 source $home/.zshrc
 
+echo "linking .gitignore and .gitconfig files"
+ln -s $repo/git/.gitignore $home
+ln -s $repo/git/.gitconfig $home
+
 echo "deleting useless files"
 echo "delete .bash_history"
 rm .bash_history
