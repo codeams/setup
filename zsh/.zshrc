@@ -103,3 +103,4 @@ alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 # eval "$(/bin/brew shellenv)"
 # linux brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+export PATH="/home/linuxbrew/.linuxbrew/opt/openjdk@8/bin:$PATH"
