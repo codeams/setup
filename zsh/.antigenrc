@@ -11,11 +11,11 @@ antigen bundle command-not-found
 # antigen bundle docker
 
 ### Load bundles from external repos
-antigen bundle lukechilds/zsh-nvm
+# antigen bundle lukechilds/zsh-nvm
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle jeffreytse/zsh-vi-mode
+# antigen bundle jeffreytse/zsh-vi-mode
 
 ### Select theme
 antigen theme denysdovhan/spaceship-prompt
