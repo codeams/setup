@@ -1,8 +1,9 @@
+home='/Users/codeams'
 
-source "/home/codeams/.zsh/antigen.zsh"
-antigen init /home/codeams/.antigenrc
+source "$home/.zsh/antigen.zsh"
+antigen init $home/.antigenrc
 
-export ZSH="/home/codeams/.oh-my-zsh"
+export ZSH="$home/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -100,7 +101,7 @@ alias pyman="python manage.py"
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 # mac brew?
-# eval "$(/bin/brew shellenv)"
-# linux brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-export PATH="/home/linuxbrew/.linuxbrew/opt/openjdk@8/bin:$PATH"
+# eval "$(/usr/local/bin/brew shellenv)"
+# linux brew?
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# export PATH="/home/linuxbrew/.linuxbrew/opt/openjdk@8/bin:$PATH"
