@@ -1,0 +1,8 @@
+.monaco-action-bar .actions-container {
+  display: none !important;
+}
+
+.monaco-workbench .part.editor>.content.empty .editor-group-container.empty>.editor-group-letterpress {
+  display: none !important;
+}
+
