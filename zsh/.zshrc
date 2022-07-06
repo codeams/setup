@@ -85,14 +85,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# add path to take pip3 installs
-export PATH="/home/codeams/.local/bin:$PATH"
-export PATH="/home/codeams/.config/composer/vendor/bin:$PATH"
-
-### aliases
-alias pyman="python manage.py"
-alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
-
 # mac brew?
 # eval "$(/usr/local/bin/brew shellenv)"
 # linux brew?
