@@ -812,13 +812,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.11588859558105469</real>
+				<real>0.10196078431372549</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.11588859558105469</real>
+				<real>0.066666666666666666</real>
 				<key>Red Component</key>
-				<real>0.11588859558105469</real>
+				<real>0.058823529411764705</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -1249,7 +1249,7 @@
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SFMono-Regular 15</string>
+			<string>SFMono-Medium 16</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1300,7 +1300,7 @@
 			<key>Thin Strokes</key>
 			<integer>4</integer>
 			<key>Transparency</key>
-			<real>0.12836394614361693</real>
+			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
@@ -1365,7 +1365,7 @@
 	<key>Selection Respects Soft Boundaries</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StatusBarPosition</key>
