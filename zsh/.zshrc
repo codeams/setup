@@ -1,4 +1,4 @@
-home='/Users/codeams'
+home='/Users/erick'
 
 source "$home/.zsh/antigen.zsh"
 antigen init $home/.antigenrc
