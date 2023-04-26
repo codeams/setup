@@ -14,12 +14,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'gcmt/taboo.vim'
 Plugin 'jszakmeister/vim-togglecursor'
-
-
-"Syntax
-Plugin 'tweekmonster/django-plus.vim'
-Plugin 'elixir-editors/vim-elixir'
-
+Plugin 'navarasu/onedark.nvim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

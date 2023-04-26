@@ -98,7 +98,22 @@ set listchars=tab:->,trail:·
 """""""""""""""""""""""""""""
 
 "Use the most beautiful palette ever made.
-colorscheme palenight
+if has('nvim')
+  let g:onedark_config = {
+    \ 'transparent': v:true,
+    \ 'style': 'light',
+    \ 'toggle_style_key': '<leader>ts',
+    \ 'ending_tildes': v:true,
+    \ 'diagnostics': {
+      \ 'darker': v:false,
+      \ 'background': v:false,
+    \ },
+  \ }
+  set background=light
+  colorscheme onedark
+else
+  colorscheme palenight
+end
 
 "Let's place this here too
 "since I'll be using iterm2
