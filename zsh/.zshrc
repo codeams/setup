@@ -95,3 +95,9 @@ fi
 # linux brew?
 # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # export PATH="/home/linuxbrew/.linuxbrew/opt/openjdk@8/bin:$PATH"
+
+# neovim fan right here?
+alias vim="nvim"
+alias vi="nvim"
+alias oldvim="vim"
+

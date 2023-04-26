@@ -100,7 +100,7 @@ set listchars=tab:->,trail:·
 "Use the most beautiful palette ever made.
 if has('nvim')
   let g:onedark_config = {
-    \ 'transparent': v:true,
+    \ 'transparent': v:false,
     \ 'style': 'light',
     \ 'toggle_style_key': '<leader>ts',
     \ 'ending_tildes': v:true,
