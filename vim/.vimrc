@@ -20,6 +20,9 @@ let mapleader = ','
 " Configurations regarding the way vim should work.
 """""""""""""""""""""""""""""
 
+" use system clipboard
+set clipboard=unnamedplus
+
 "Disable editor bells.
 set noerrorbells visualbell t_vb=
 
@@ -66,7 +69,7 @@ set noshowcmd
 set noshowmode
 
 "Hide the file name at the bottom
-set ls=0
+" set ls=0
 
 "Disable line wrapping.
 set nowrap
@@ -109,7 +112,7 @@ if has('nvim')
       \ 'background': v:false,
     \ },
   \ }
-  set background=light
+  " set background=light
   colorscheme onedark
 else
   colorscheme palenight
@@ -117,7 +120,7 @@ end
 
 "Let's place this here too
 "since I'll be using iterm2
-"set termguicolors
+set termguicolors
 
 "Fake a custom left padding for each window.
 hi LineNr guibg=bg
