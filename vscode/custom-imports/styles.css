@@ -1,8 +1,7 @@
-.monaco-action-bar .actions-container {
+#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.title > div.title-actions > div > div > ul {
   display: none !important;
 }
 
-.monaco-workbench .part.editor>.content.empty .editor-group-container.empty>.editor-group-letterpress {
+.monaco-workbench .part.editor>.content .editor-group-container>.editor-group-watermark {
   display: none !important;
 }
-
