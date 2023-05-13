@@ -3,7 +3,7 @@ module.exports = {
     config: {
         updateChannel: 'stable',
 
-        fontSize: 16,
+        fontSize: 17,
         fontFamily: 'Sohne Mono, Monaco, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
         fontWeight: 'normal', // 'normal' or 'bold'
         fontWeightBold: 'normal', // 'normal' or 'bold'
@@ -16,7 +16,7 @@ module.exports = {
         cursorBlink: false,
 
         foregroundColor: '#000',
-        backgroundColor: 'rgba(248,248,248,0.3)',
+        // backgroundColor: 'rgba(248,248,248,0.8)',
         selectionColor: 'rgba(248,28,229,0.3)',
         // borderColor: '#333',
 
@@ -81,8 +81,8 @@ module.exports = {
     },
 
     plugins: [
-      // 'hyperterm-atom-dark'
-      'hyper-one-light',
+      'hyperterm-atom-dark'
+      // 'hyper-one-light',
     ],
 };
 //# sourceMappingURL=config-default.js.map
