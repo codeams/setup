@@ -56,7 +56,7 @@ let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 
 "Show match in parens, etc.
-"set showmatch
+set showmatch
 
 "Disable line numbers.
 set nonumber
@@ -94,33 +94,35 @@ set tabstop=2 shiftwidth=2 expandtab
 set list
 set listchars=tab:->,trail:·
 
+" Set line height simliar to 1.5
+set linespace=5
 
 """""""""""""""""""""""""""""
 " Visuals
 " Configurations for making the editor look great.
 """""""""""""""""""""""""""""
 
-"Use the most beautiful palette ever made.
-if has('nvim')
-  let g:onedark_config = {
-    \ 'transparent': v:false,
-    \ 'style': 'light',
-    \ 'toggle_style_key': '<leader>ts',
-    \ 'ending_tildes': v:true,
-    \ 'diagnostics': {
-      \ 'darker': v:false,
-      \ 'background': v:false,
-    \ },
-  \ }
-  " set background=light
-  colorscheme onedark
-else
-  colorscheme palenight
-end
+" Use the most beautiful palette ever made
+colorscheme palenight
 
-"Let's place this here too
-"since I'll be using iterm2
 set termguicolors
+
+" Transparent background
+hi! Normal ctermbg=NONE guibg=NONE
+hi! NonText ctermbg=NONE guibg=NONE
+
+" VimDiff
+hi DiffAdd      guifg=NONE      guibg=#3D5C3F
+hi DiffChange   ctermfg=NONE    ctermbg=NONE
+hi DiffChange   guifg=NONE      guibg=NONE
+hi DiffDelete   guifg=NONE      guibg=#592132
+hi DiffText     guifg=NONE      guibg=#1E4233
+
+" Hide all scrollbars
+set go-=l
+set go-=L
+set go-=r
+set go-=R
 
 "Fake a custom left padding for each window.
 hi LineNr guibg=bg
@@ -211,6 +213,23 @@ nmap <C-t> <Plug>PeepOpen
 "/
 noremap  <Leader>g :GitGutterToggle<CR>
 
+"/
+"/ Prettier
+"/
+" let g:prettier#autoformat = 1
+" let g:prettier#autoformat_require_pragma = 0
+let g:prettier#autoformat_config_present = 1
+let g:prettier#autoformat_require_pragma = 0
+
+" Format when leaving insert mode
+" let g:prettier#quickfix_enabled = 0
+" autocmd TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.svelte,*.yaml,*.html PrettierAsync
+
+"/
+"/ COC
+"/
+let g:coc_global_extensions = ['coc-tsserver', 'coc-eslint']
+let g:coc_config_home = '~/.vim/coc/'
 
 """""""""""""""""""""""""""""
 " Vim cursor

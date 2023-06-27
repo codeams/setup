@@ -40,4 +40,6 @@
   ff = only
 [pull]
   ff = only
+[diff]
+  tool = vimdiff
 

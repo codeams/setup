@@ -1,21 +1,42 @@
-filetype off                  " required
+filetype off
 
-
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-
-"Editor features
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'gcmt/taboo.vim'
-Plugin 'jszakmeister/vim-togglecursor'
-Plugin 'navarasu/onedark.nvim'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Start Plugin List
+""""""""""""""""""""""""""""""""""""""""""""""""
+if !&diff
+
+  """ Color schemes
+  Plugin 'navarasu/onedark.nvim'
+
+  """ Vim
+  Plugin 'ctrlpvim/ctrlp.vim'
+  Plugin 'gcmt/taboo.vim'
+
+  """ Editor
+  Plugin 'airblade/vim-gitgutter'
+  Plugin 'tomtom/tcomment_vim'
+  Plugin 'terryma/vim-multiple-cursors'
+  Plugin 'jszakmeister/vim-togglecursor'
+
+  " Sense
+  Plugin 'github/copilot.vim'
+  Plugin 'prettier/vim-prettier'
+  Plugin 'neoclide/coc.nvim'
+
+  " Typescript
+  Plugin 'pangloss/vim-javascript'
+  Plugin 'leafgarland/typescript-vim'
+  Plugin 'maxmellon/vim-jsx-pretty'
+
+endif
+""""""""""""""""""""""""""""""""""""""""""""""""
+" End
+""""""""""""""""""""""""""""""""""""""""""""""""
+
+call vundle#end()
+filetype plugin indent on
