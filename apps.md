@@ -1,3 +1,0 @@
-iTerm2
-Tomighty
-
