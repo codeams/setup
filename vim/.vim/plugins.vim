@@ -12,6 +12,7 @@ if !&diff
 
   """ Color schemes
   Plugin 'navarasu/onedark.nvim'
+  Plugin 'codeams/clearnight.vim'
 
   """ Vim
   Plugin 'ctrlpvim/ctrlp.vim'
@@ -30,7 +31,7 @@ if !&diff
 
   " Typescript
   Plugin 'pangloss/vim-javascript'
-  Plugin 'leafgarland/typescript-vim'
+  " Plugin 'leafgarland/typescript-vim'
   Plugin 'maxmellon/vim-jsx-pretty'
 
 endif

@@ -103,26 +103,39 @@ set linespace=5
 """""""""""""""""""""""""""""
 
 " Use the most beautiful palette ever made
-colorscheme palenight
-
 set termguicolors
+let g:clearnight_terminal_italics=1
+colorscheme clearnight
 
-" Transparent background
+hi! Normal ctermbg=NONE guibg=NONE
+hi! EndOfBuffer ctermbg=NONE guibg=NONE
+hi! NonText ctermbg=NONE guibg=NONE
+hi! SignColumn ctermbg=NONE guibg=NONE
+hi! NormalNC ctermbg=NONE guibg=NONE
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
+hi! Folded ctermbg=NONE guibg=NONE
+hi! TabLine ctermbg=NONE guibg=NONE
+hi! TabLineSel ctermbg=NONE guibg=NONE
+hi! TabLineFill ctermbg=NONE guibg=NONE
+hi! StatusLine ctermbg=NONE guibg=NONE
+hi! StatusLineNC ctermbg=NONE guibg=NONE
+hi! VertSplit ctermbg=NONE guibg=NONE
+hi! SignColumn ctermbg=NONE guibg=NONE
 
-" VimDiff
-hi DiffAdd      guifg=NONE      guibg=#3D5C3F
-hi DiffChange   ctermfg=NONE    ctermbg=NONE
-hi DiffChange   guifg=NONE      guibg=NONE
-hi DiffDelete   guifg=NONE      guibg=#592132
-hi DiffText     guifg=NONE      guibg=#1E4233
 
-" Hide all scrollbars
-set go-=l
-set go-=L
-set go-=r
-set go-=R
+" " VimDiff -- this should come form the colorscheme
+" hi DiffAdd      guifg=NONE      guibg=#3D5C3F
+" hi DiffChange   ctermfg=NONE    ctermbg=NONE
+" hi DiffChange   guifg=NONE      guibg=NONE
+" hi DiffDelete   guifg=NONE      guibg=#592132
+" hi DiffText     guifg=NONE      guibg=#1E4233
+
+" Hide all scrollbars -- this is only useful for macvim
+" set go-=l
+" set go-=L
+" set go-=r
+" set go-=R
 
 "Fake a custom left padding for each window.
 hi LineNr guibg=bg
