@@ -1,43 +1,48 @@
-filetype off
+" Automatic installation of Vim Plug
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Automatic run of PluginInstall
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
 
-Plugin 'VundleVim/Vundle.vim'
+if !&diff
 
+call plug#begin('~/.vim/plugged')
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Start Plugin List
 """"""""""""""""""""""""""""""""""""""""""""""""
-if !&diff
 
   """ Color schemes
-  Plugin 'navarasu/onedark.nvim'
-  Plugin 'codeams/clearnight.vim'
+  Plug 'navarasu/onedark.nvim'
+  Plug 'codeams/clearnight.vim'
 
   """ Vim
-  Plugin 'ctrlpvim/ctrlp.vim'
-  Plugin 'gcmt/taboo.vim'
+  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'gcmt/taboo.vim'
 
   """ Editor
-  Plugin 'airblade/vim-gitgutter'
-  Plugin 'tomtom/tcomment_vim'
-  Plugin 'terryma/vim-multiple-cursors'
-  Plugin 'jszakmeister/vim-togglecursor'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'tomtom/tcomment_vim'
+  Plug 'terryma/vim-multiple-cursors'
+  Plug 'jszakmeister/vim-togglecursor'
 
   " Sense
-  Plugin 'github/copilot.vim'
-  Plugin 'prettier/vim-prettier'
-  Plugin 'neoclide/coc.nvim'
+  Plug 'github/copilot.vim'
+  Plug 'prettier/vim-prettier'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   " Typescript
-  Plugin 'pangloss/vim-javascript'
-  " Plugin 'leafgarland/typescript-vim'
-  Plugin 'maxmellon/vim-jsx-pretty'
+  Plug 'pangloss/vim-javascript'
+  " Plug 'leafgarland/typescript-vim'
+  Plug 'maxmellon/vim-jsx-pretty'
 
+""""""""""""""""""""""""""""""""""""""""""""""""
+" End List
+""""""""""""""""""""""""""""""""""""""""""""""""
+call plug#end()
 endif
-""""""""""""""""""""""""""""""""""""""""""""""""
-" End
-""""""""""""""""""""""""""""""""""""""""""""""""
-
-call vundle#end()
-filetype plugin indent on
