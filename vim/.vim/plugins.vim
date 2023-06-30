@@ -22,8 +22,12 @@ call plug#begin('~/.vim/plugged')
   Plug 'codeams/clearnight.vim'
 
   """ Vim
-  Plug 'ctrlpvim/ctrlp.vim'
   Plug 'gcmt/taboo.vim'
+  Plug 'itchyny/lightline.vim'
+
+  """ Files and Source control
+  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'tpope/vim-fugitive'
 
   """ Editor
   Plug 'airblade/vim-gitgutter'

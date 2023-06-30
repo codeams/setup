@@ -107,6 +107,21 @@ set termguicolors
 let g:clearnight_terminal_italics=1
 colorscheme clearnight
 
+let g:lightline = {
+      \ 'colorscheme': 'clearnight',
+      \ 'active': {
+      \   'left': [['gitbranch'], ['relativepath']],
+      \   'right': [],
+      \ },
+      \ 'inactive': {
+      \   'left': [['filename']],
+      \   'right': [],
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ }
+      \ }
+
 hi! Normal ctermbg=NONE guibg=NONE
 hi! EndOfBuffer ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
