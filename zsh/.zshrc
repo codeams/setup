@@ -11,6 +11,9 @@ export ZSH="$home/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
+# Avoid setting title, let the terminal handle it
+DISABLE_AUTO_TITLE="true"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -85,18 +88,12 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# mac brew?
-# eval "$(/usr/local/bin/brew shellenv)"
-if [ -d "/usr/local/opt/ruby/bin" ]; then
-  export PATH=/usr/local/opt/ruby/bin:$PATH
-  export PATH=`gem environment gemdir`/bin:$PATH
-fi
+export PATH="/opt/homebrew/bin:$PATH"
 
-# linux brew?
-# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-# export PATH="/home/linuxbrew/.linuxbrew/opt/openjdk@8/bin:$PATH"
+# Load brew
+export PATH="/opt/homebrew/bin:$PATH"
 
-# neovim fan right here?
+# force into neovim
 alias vim="nvim"
 alias vi="nvim"
 alias oldvim="vim"
