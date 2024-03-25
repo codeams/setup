@@ -88,8 +88,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-export PATH="/opt/homebrew/bin:$PATH"
-
 # Load brew
 export PATH="/opt/homebrew/bin:$PATH"
 
