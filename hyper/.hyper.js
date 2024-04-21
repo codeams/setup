@@ -3,8 +3,8 @@ module.exports = {
     config: {
         updateChannel: 'stable',
 
-        fontSize: 17,
-        fontFamily: 'Sohne Mono, Monaco, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+        fontSize: 15,
+        fontFamily: 'Cascadia Code, Sohne Mono, Monaco, Fira Code, monospace',
         fontWeight: 'normal', // 'normal' or 'bold'
         fontWeightBold: 'normal', // 'normal' or 'bold'
         lineHeight: 1.5,
@@ -15,9 +15,9 @@ module.exports = {
         cursorShape: 'BLOCK', // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
         cursorBlink: false,
 
-        foregroundColor: '#000',
+        // foregroundColor: '#000',
         // backgroundColor: 'rgba(248,248,248,0.8)',
-        selectionColor: 'rgba(248,28,229,0.3)',
+        // selectionColor: 'rgba(248,28,229,0.3)',
         // borderColor: '#333',
 
         css: '',
@@ -81,8 +81,9 @@ module.exports = {
     },
 
     plugins: [
-      'hyperterm-atom-dark'
-      // 'hyper-one-light',
+	// 'hyper-flat'
+	'hyperterm-atom-dark'
+	// 'hyper-one-light',
     ],
 };
 //# sourceMappingURL=config-default.js.map
