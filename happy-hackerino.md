@@ -35,6 +35,12 @@ Follow Oh my Zsh installation guide:
 
 Follow steps from `https://brew.sh`
 
+## Vim (nvim)
+
+`ln -s /Users/erick/Developer/setup/vim/.vimrc /Users/erick/`
+`ln -s /Users/erick/Developer/setup/vim/.vim /Users/erick/`
+`mkdir -p ~/.config/nvim; ln -s ~/.vimrc ~/.config/nvim/init.vim`
+
 ## Final details
 
 `touch ~/.hushlogin`

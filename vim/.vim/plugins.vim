@@ -20,6 +20,7 @@ call plug#begin('~/.vim/plugged')
   """ Color schemes
   Plug 'navarasu/onedark.nvim'
   Plug 'codeams/clearnight.vim'
+  Plug 'codeams/palenight.vim'
 
   """ Vim
   Plug 'gcmt/taboo.vim'

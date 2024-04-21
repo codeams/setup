@@ -104,11 +104,11 @@ set linespace=5
 
 " Use the most beautiful palette ever made
 set termguicolors
-let g:clearnight_terminal_italics=1
-colorscheme clearnight
+let g:palenight_terminal_italics=1
+colorscheme palenight
 
 let g:lightline = {
-      \ 'colorscheme': 'clearnight',
+      \ 'colorscheme': 'palenight',
       \ 'active': {
       \   'left': [['gitbranch'], ['relativepath']],
       \   'right': [],
