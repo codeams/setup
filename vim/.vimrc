@@ -103,12 +103,22 @@ set linespace=5
 """""""""""""""""""""""""""""
 
 " Use the most beautiful palette ever made
-set termguicolors
-let g:palenight_terminal_italics=1
-colorscheme palenight
+" " Check if the terminal is Terminal.app
+if $TERM_PROGRAM == 'Apple_Terminal'
+  " Disable termguicolors for macOS Terminal
+  set notermguicolors
+else
+  " Enable termguicolors for other terminals, if supported
+  if has('termguicolors')
+    set termguicolors
+  endif
+endif
+
+let g:clearnight_terminal_italics=1
+colorscheme clearnight
 
 let g:lightline = {
-      \ 'colorscheme': 'palenight',
+      \ 'colorscheme': 'clearnight',
       \ 'active': {
       \   'left': [['gitbranch'], ['relativepath']],
       \   'right': [],
@@ -122,21 +132,23 @@ let g:lightline = {
       \ }
       \ }
 
-hi! Normal ctermbg=NONE guibg=NONE
-hi! EndOfBuffer ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE
-hi! SignColumn ctermbg=NONE guibg=NONE
-hi! NormalNC ctermbg=NONE guibg=NONE
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE
-hi! Folded ctermbg=NONE guibg=NONE
-hi! TabLine ctermbg=NONE guibg=NONE
-hi! TabLineSel ctermbg=NONE guibg=NONE
-hi! TabLineFill ctermbg=NONE guibg=NONE
-hi! StatusLine ctermbg=NONE guibg=NONE
-hi! StatusLineNC ctermbg=NONE guibg=NONE
-hi! VertSplit ctermbg=NONE guibg=NONE
-hi! SignColumn ctermbg=NONE guibg=NONE
+" Commenting out as transparency doesn't
+" work very well with Hyper.js
+" hi! Normal ctermbg=NONE guibg=NONE
+" hi! EndOfBuffer ctermbg=NONE guibg=NONE
+" hi! NonText ctermbg=NONE guibg=NONE
+" hi! SignColumn ctermbg=NONE guibg=NONE
+" hi! NormalNC ctermbg=NONE guibg=NONE
+" hi! Normal ctermbg=NONE guibg=NONE
+" hi! NonText ctermbg=NONE guibg=NONE
+" hi! Folded ctermbg=NONE guibg=NONE
+" hi! TabLine ctermbg=NONE guibg=NONE
+" hi! TabLineSel ctermbg=NONE guibg=NONE
+" hi! TabLineFill ctermbg=NONE guibg=NONE
+" hi! StatusLine ctermbg=NONE guibg=NONE
+" hi! StatusLineNC ctermbg=NONE guibg=NONE
+" hi! VertSplit ctermbg=NONE guibg=NONE
+" hi! SignColumn ctermbg=NONE guibg=NONE
 
 
 " " VimDiff -- this should come form the colorscheme

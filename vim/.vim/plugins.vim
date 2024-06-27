@@ -20,6 +20,7 @@ call plug#begin('~/.vim/plugged')
   """ Color schemes
   Plug 'navarasu/onedark.nvim'
   Plug 'codeams/clearnight.vim'
+  " Plug 'drewtempelmeyer/palenight.vim'
   Plug 'codeams/palenight.vim'
 
   """ Vim
@@ -37,7 +38,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'jszakmeister/vim-togglecursor'
 
   " Sense
-  Plug 'github/copilot.vim'
+  " Plug 'github/copilot.vim'
   Plug 'prettier/vim-prettier'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
