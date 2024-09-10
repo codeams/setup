@@ -39,6 +39,7 @@ call plug#begin('~/.vim/plugged')
 
   " Sense
   " Plug 'github/copilot.vim'
+  Plug 'Exafunction/codeium.vim'
   Plug 'prettier/vim-prettier'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 

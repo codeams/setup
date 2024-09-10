@@ -4,7 +4,7 @@ module.exports = {
         updateChannel: 'stable',
 
         fontSize: 15,
-        fontFamily: 'Cascadia Code, Sohne Mono, Monaco, Fira Code, monospace',
+        fontFamily: 'PT Mono, Consolas, Sohne Mono, Operator Mono, Cascadia Code, Monaco, Fira Code, monospace',
         fontWeight: 'normal', // 'normal' or 'bold'
         fontWeightBold: 'normal', // 'normal' or 'bold'
         lineHeight: 1.5,
@@ -81,9 +81,9 @@ module.exports = {
     },
 
     plugins: [
-	// 'hyper-flat'
-	'hyperterm-atom-dark'
-	// 'hyper-one-light',
+  'hyperterm-atom-dark'
+  // 'hyper-flat'
+  // 'hyper-one-light',
     ],
 };
 //# sourceMappingURL=config-default.js.map

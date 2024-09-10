@@ -291,6 +291,12 @@ if exists('$ITERM_PROFILE')
   endif
 end
 
+inoremap <silent><expr> <Tab>
+  \ coc#pum#visible() ? coc#pum#confirm() :
+  \ codeium#Accept()
+  \ "\<Tab>"
+
+call coc#config('suggest.autoTrigger', 'none')
 
 """""""""""""""""""""""""""""
 " Auto commands
