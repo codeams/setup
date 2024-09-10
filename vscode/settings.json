@@ -1,0 +1,304 @@
+// Codeams' VSCode configuration file
+{
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  // "emmet.syntaxProfiles": {
+  //   "html": {
+  //     "attr_quotes": "single"
+  //   }
+  // },
+
+  // Extensions configuration
+  "extensions.ignoreRecommendations": false,
+
+  // Editor configuration
+  "editor.fontFamily": "PT Mono, Consolas, Operator Mono, Space Mono, Sohne Mono, SF Mono, Cascadia Code, Sohne Mono, Fira Code, Monaco, monospace",
+  "editor.fontSize": 15,
+  "editor.fontWeight": "400",
+  "editor.lineHeight": 30, // For Monaco/Fira Code use: 26
+  "editor.letterSpacing": -0.4,
+  "editor.fontLigatures": false,
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "expand",
+  "editor.tabSize": 2,
+  "editor.rulers": [],
+  "editor.renderWhitespace": "selection",
+  "editor.minimap.renderCharacters": false,
+  "workbench.tree.renderIndentGuides": "none",
+
+  // Terminal & Integrated terminal configuration
+  "terminal.external.osxExec": "Hyper.app",
+  "terminal.integrated.fontFamily": "Cascadia Code, Sohne Mono, Monaco, Operator Mono, Fira Code, monospace",
+  "terminal.integrated.fontSize": 15, // For Monaco/Fira Code use: 1,4
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.cursorBlinking": true,
+
+  // Custom configuration for vue language
+  "workbench.startupEditor": "none",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+
+  // Sidebar expolorer options
+  "explorer.openEditors.visible": 0,
+  "workbench.editor.tabCloseButton": "off",
+  "editor.smoothScrolling": true,
+  "emmet.includeLanguages": {
+    "php": "html",
+    "blade": "html",
+    "vue": "html",
+    "vue-html": "html",
+    "erb": "html",
+    "liquid": "html"
+  },
+  "editor.detectIndentation": true,
+  "workbench.tips.enabled": false,
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#5C6BC0",
+    "list.activeSelectionForeground": "#5C6BC0",
+    "list.inactiveSelectionForeground": "#5C6BC0",
+    "list.highlightForeground": "#5C6BC0",
+    "scrollbarSlider.activeBackground": "#5C6BC050",
+    "editorSuggestWidget.highlightForeground": "#5C6BC0",
+    "textLink.foreground": "#5C6BC0",
+    "progressBar.background": "#5C6BC0",
+    "pickerGroup.foreground": "#5C6BC0",
+    "tab.activeBorder": "#5C6BC0"
+  },
+  "window.restoreWindows": "folders",
+  "window.newWindowDimensions": "inherit",
+  "files.insertFinalNewline": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true
+  },
+  "search.useIgnoreFiles": true,
+  "vetur.validation.template": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "entity.other.attribute-name.tag.jade",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "variable.scss",
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "scope": "entity.other.attribute-name.class.css",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "entity.other.attribute-name.class.jade",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "entity.other.attribute-name.html",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "storage.type.js",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "storage.type.function.js",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "storage.type.function.js",
+          "meta.import.js",
+          "meta.export.js"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "workbench.settings.openDefaultSettings": true,
+  "editor.colorDecorators": false,
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "strings": "off",
+    "other": "off"
+  },
+  // "typescript.quickSuggestionsForPaths": false,
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.normal": "underline",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": false,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "b"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": [":vsp"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
+    }
+  ],
+  "vim.leader": ",",
+  "vim.handleKeys": {
+    "<D-d>": true,
+    "<C-d>": true
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  // Optional: Set the amount of chatmessages that are shown
+  "window.closeWhenEmpty": false,
+  "editor.tabCompletion": "onlySnippets",
+  "scm.diffDecorations": "all",
+  "editor.glyphMargin": false,
+  "workbench.view.alwaysShowHeaderActions": false,
+
+  "vscode_custom_css.imports": [
+    "file:///Users/erick/Developer/setup/vscode/custom-imports/styles.css"
+  ],
+  // "vscode_custom_css.policy": true,
+  "window.title": "${rootName}",
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "extensions.autoUpdate": false,
+  "terminal.integrated.lineHeight": 1.4,
+  "scm.diffDecorationsGutterWidth": 2,
+  "editor.overviewRulerBorder": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.renderLineHighlight": "none",
+  "editor.occurrencesHighlight": "off",
+  "editor.hideCursorInOverviewRuler": true,
+  "todohighlight.keywords": [
+    {
+      "text": "TODO",
+      "color": "orange",
+      "textDecoration": "underline",
+      "backgroundColor": "transparent"
+    },
+    {
+      "text": "FIXME",
+      "color": "red",
+      "textDecoration": "underline",
+      "backgroundColor": "transparent"
+    }
+  ],
+  "breadcrumbs.enabled": false,
+  "git.openRepositoryInParentFolders": "always",
+  "workbench.layoutControl.enabled": false,
+  "editor.stickyScroll.enabled": false,
+
+  // Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.tabs.showActiveTerminal": "never",
+  "terminal.integrated.tabs.showActions": "never",
+  "editor.autoClosingQuotes": "never",
+  "workbench.preferredHighContrastLightColorTheme": "GitHub Light Colorblind (Beta)",
+  "workbench.editor.showTabs": "single",
+  "zenMode.fullScreen": false,
+  "window.autoDetectColorScheme": true,
+  "window.autoDetectHighContrast": false,
+  "debug.console.fontSize": 14,
+  "debug.console.fontFamily": "Sohne Mono, Monaco",
+  "debug.console.lineHeight": 25,
+  "scm.inputFontFamily": "Sohne Mono, Monaco",
+  "scm.inputFontSize": 12,
+  "github.branchProtection": true,
+  "oneDarkPro.vivid": false,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "workbench.colorTheme": "Material Theme Darker",
+  "oneDarkPro.italic": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.lightbulb.enabled": "off",
+  "editor.inlineSuggest.enabled": true,
+  "git.enableSmartCommit": true,
+  "editor.minimap.enabled": false,
+  "workbench.statusBar.visible": false,
+  "window.commandCenter": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "eslint.run": "onSave",
+  "editor.quickSuggestionsDelay": 800,
+  "oneDarkPro.bold": false,
+  "editor.accessibilitySupport": "off",
+  "editor.lineNumbers": "off",
+  "workbench.sideBar.location": "right",
+  "codeium.enableCodeLens": false,
+
+  // "editor.acceptSuggestionOnCommitCharacter": false,
+  // "editor.acceptSuggestionOnCommitCharacter": false,
+  // "editor.acceptSuggestionOnEnter": "off",
+  // "editor.hover.enabled": false,
+  // "editor.minimap.enabled": false,
+  // "editor.parameterHints.enabled": false,
+  // "editor.quickSuggestions": false,
+  // "editor.quickSuggestionsDelay": 10,
+  // "editor.suggest.snippetsPreventQuickSuggestions": false,
+  // "editor.suggestOnTriggerCharacters": false,
+  // "editor.wordBasedSuggestions": "off",
+  "workbench.preferredLightColorTheme": "FlatUI Immersed",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.confirmBeforeClose": "keyboardOnly",
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 2,
+  "editor.guides.indentation": false,
+  "editor.stickyScroll.scrollWithEditor": false,
+  "workbench.tree.enableStickyScroll": false,
+  "editor.matchBrackets": "near",
+  "errorLens.delay": 2500,
+  "workbench.preferredDarkColorTheme": "Material Theme Palenight"
+}
+
