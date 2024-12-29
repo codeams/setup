@@ -299,6 +299,12 @@ inoremap <silent><expr> <Tab>
 call coc#config('suggest.autoTrigger', 'none')
 
 """""""""""""""""""""""""""""
+" Short commands
+"""""""""""""""""""""""""""""
+
+command! E Explore
+
+"""""""""""""""""""""""""""""
 " Auto commands
 """""""""""""""""""""""""""""
 
