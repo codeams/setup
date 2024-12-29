@@ -1,0 +1,8 @@
+macos-titlebar-style = hidden
+window-padding-x = 6
+window-padding-y = 6
+adjust-cell-height = 50%
+font-size = 14.5
+
+theme = dark:"Ayu Mirage",light:catppuccin-latte
+font-family = "Cascadia Code" 
