@@ -96,3 +96,5 @@ alias vim="nvim"
 alias vi="nvim"
 alias oldvim="vim"
 
+# project management specific
+alias release="git checkout main && git merge dev && git push origin && git checkout dev"
